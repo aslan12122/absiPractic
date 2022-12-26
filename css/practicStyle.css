@@ -1,0 +1,602 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+     height: 5000px;
+     width: 100%;
+}
+/*  -------------------------------------- header------------------------------------------------ */
+
+.header{ 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(79, 95, 124, 0.733);
+    position: fixed;
+    z-index: 10;
+}
+.header .container{ 
+overflow: auto;
+width: 90%;
+
+margin: auto;
+}
+
+.header .container .logo img {
+    width: 100px;
+    height: 90%;
+    opacity: 0.5;
+    float: left;
+    
+}
+.header .container .nav { 
+    list-style: none;
+    float: right;
+    width:50%;
+    padding-top: 13px;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header .container .nav a { 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.header .container .nav li { 
+    list-style: none;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+/*  -------------------------------- home section ---------------------------------------------*/
+.home{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/1dcdb7fc-cda3-427b-821e-3c68bdd7b12e.jfif);
+    background-size: cover;
+    position: relative;
+}
+.home .overlay { 
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.home .content { 
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: beige;
+}
+.home .content h1 { 
+    font-size: 70px;
+    letter-spacing: 4px;
+
+}
+.home .content p { 
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .but1 , .but2 { 
+   width: 150px;
+   padding: 15px 0px ;
+   margin-top: 10px;
+border: 0;
+border-radius: 5px;
+font-size: medium;
+cursor: pointer;
+
+}
+.content .but2 { 
+    background-color: rgb(48, 60, 168);
+    color: aliceblue;
+}
+.content .but1 { 
+    margin-right: 7px;
+background-color: rgb(197, 210, 221);
+}
+.content .but1:hover , .but2:hover {
+    opacity: 0.8;
+}
+/*  -------------------------------- welcome section ---------------------------------------------*/
+.welcome-home { 
+    /* background-color: #d1092a50; */
+    height: 100vh;
+}
+.welcome-home h1 {
+    text-align: center;
+    padding:100px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+.welcome-home .section { 
+    width: 90%;
+    margin: auto;
+}
+
+.welcome-home .container {
+    border: 1px  solid ; 
+    width: 26%;
+    text-align: center;
+    float: left;
+    margin-left: 6%;
+    position: relative;
+    z-index: 3;
+}
+.welcome-home .container .content { 
+    padding: 40px 0;
+}
+.welcome-home .container i {
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(65, 65, 236);
+}
+.welcome-home .container h2 { 
+    margin-top: 5px;
+    font-size: 30px;
+}
+.welcome-home .container p { 
+    margin-top: 10px ;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: gray;
+}
+.welcome-home .container a { 
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(65, 65, 236);
+text-transform: capitalize;}
+
+.welcome-home .container::after {
+    background-color: rgba(0, 0, 0, 0.795);
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+.container:hover.container::after {
+width: 100%;
+height: 100%;
+opacity: 0.5;
+}
+/*  -------------------------------- portfolio section ---------------------------------------------*/
+.portfolio  {
+    height: 100vh;
+    background-color: rgba(97, 104, 104, 0.493);
+}
+.portfolio h1 { 
+    text-align: center;
+    padding: 80px 0;
+}
+.portfolio hr { 
+    margin: auto;
+    width: 70px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin-top: -70px;
+}
+.portfolio .section { 
+ width: 90%;
+ margin: auto;
+ overflow: auto;
+} 
+
+.portfolio .container { 
+    /* background-color: grey; */
+    width: 26%;
+    height: 300px;
+    position: relative;
+    margin-left: 6%;
+    float: left;
+    margin-top: 40px;
+}
+.portfolio .content { 
+    background-image: url(../image/1dcdb7fc-cda3-427b-821e-3c68bdd7b12e.jfif);
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    
+}
+.portfolio .info { 
+ position: absolute;
+ width: 60%;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% ,-50%);
+ text-align: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 20px;
+ visibility: hidden;
+}
+
+.portfolio h2 { 
+    color:rgb(67, 67, 218);
+    font-weight: 100;
+    margin-bottom: 7px;
+}
+.portfolio p { 
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    
+}
+.portfolio a { 
+    background-color: rgb(67, 67, 218);
+    padding: 10px;
+    font-size: 20px;
+}
+.portfolio .container::after { 
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.671);
+    visibility: hidden;
+}
+.portfolio .container:hover.container::after{
+    visibility: visible;
+    z-index: 0;
+}
+.portfolio .container:hover .info {
+    visibility: visible;
+    z-index: 2;
+}
+/*  -------------------------------- BLOG section ---------------------------------------------*/
+.blog { 
+    height: 150vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.blog h1 { 
+    text-align: center;
+    padding: 120px 0px 60px 0px;
+    
+}
+.blog hr {
+    width: 80px;
+    margin: auto;
+    margin-top: -50px;
+    border: none;
+    height: 3px;
+    background-color: gray;
+    margin-bottom: 150px;
+}
+.blog .section { 
+    width: 90%;
+    height: 60%;
+    overflow:auto; 
+    margin: auto;
+
+}
+.blog .container { 
+    height: 200px;
+    width: 26%;
+    border: solid 1px;
+    float: left;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    z-index: 1;
+    position: relative;
+
+   
+}
+.blog .content { 
+    width: 80%;
+    height: 90%;
+}
+.blog  .info{ 
+position: absolute;
+top: 15%;
+left: 5%;
+width: 100%;
+height: 100%;
+
+}
+.blog .prg{ 
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 50px;
+}
+.blog i { 
+    font-size: 30px;
+    color: rgb(36, 111, 196);
+}
+.blog .info h2 { 
+    margin-bottom: 15px;
+}
+.blog .info p { 
+    font-family: serif;
+    font-size: 20px;
+}
+
+.blog .container::after{ 
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.795);
+    z-index: index -4;
+
+}
+.blog .container:hover.container::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.blog .container:hover h2 {
+    color: antiquewhite;
+}
+/*  -------------------------------- about section ---------------------------------------------*/
+.about12 { 
+    height: 100vh;
+    background-color: rgba(148, 141, 141, 0.082);
+    margin-top: -70px;
+
+}
+.about12 .section12 {
+    width: 90%;
+   margin: auto;
+   overflow: auto;
+   padding-top: 150px;
+}
+.about12 h2 { 
+text-align: left;
+}
+.about12 hr { 
+    margin: 10px 0px 40px 0px ;
+    width: 60px;
+    height: 3px;
+    border: noun;
+    background-color: rgb(61, 133, 216);
+}
+.about12 .info12 {
+    width: 50%;
+    font-size: 20px;
+    float: left;
+}
+.about12 h2 { 
+    font-size: 40px;
+}
+.about12 p { 
+    margin-bottom: 20px;
+}
+.about12 ul  { 
+    list-style: none;
+    font-size: 17px;
+    line-height: 40px;
+}
+.about12 i { 
+    font-size: 15px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+.about12 .imag12 { 
+    height: 400px;
+    width: 350px;
+    float: right;
+    background-size: cover;
+    margin-right: 150px;
+}
+.imag12 img {
+    height: 90%;
+    width: 100%;
+}
+.imag12 ul{
+    margin-left: 170px;
+    margin-top: 8px;
+
+}
+.imag12 ul li { 
+    
+    height: 10px;
+    width: 10px;
+    border: 1px solid;
+    float: left;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.imag12 ul li:hover {
+    background-color:  rgb(61, 133, 216);
+}
+
+.imag12 .active {
+    background-color:  rgb(61, 133, 216);
+ }
+/*  -------------------------------- files section ---------------------------------------------*/
+.files { 
+    height: 350px;
+    background-image: url(../image/a08dfebe-2d49-4514-9bab-c8b7c72a4e9a.jfif);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.files .overlay { 
+    background-color: rgba(0, 0, 0, 0.548);
+   
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.files .section { 
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 140px;
+    
+}
+.files .container13 { 
+    float: left;
+    width: 25%;
+    
+    text-align: center;
+    font-family: serif;
+    
+}
+.container13 i { 
+ font-size: 50px;
+}
+.container13 h3 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.container13 span { 
+    color: aliceblue;
+    font-size: 20px;
+}
+/*  -------------------------------- files section ---------------------------------------------*/
+.parent{
+    height: 100vh ;   
+    overflow: auto;
+    }
+    .parent  h2  { 
+    padding-top: 150px;
+    padding-left: 500px;
+    font-weight: 200;
+    color: rgb(136, 0, 0);
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+    }
+    .div { 
+        color: rgb(0, 0, 0);
+        width: 250;
+        height: 350;
+        border: solid 1px black;
+        float: left;
+        margin-left: 150px;
+        margin-top: 70px;
+        background-color: #ffffff65;
+        position: relative;
+    }
+    .div .prace { 
+        font-size: 14px;
+        width: 80;
+        height: 70;
+        border-radius: 50%;
+        padding: 5px;
+        border: solid 1px #000000;
+        margin-left: 80px;
+        margin-top: 10px;
+        text-align: center;
+    
+    }
+    .div .prace span { 
+        font-size:30px ;
+    }
+    .div h6 { 
+        font-size: 25px;
+        text-align: center;
+        margin-top: 2px;
+    }
+    .div p { 
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+        margin-top: 10px;
+    }
+    
+    .div::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        background-color: rgba(116, 70, 0, 0.603);
+        opacity: 0.5;
+    }
+    .div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1; 
+    }
+    .parent .div:hover  .prace  { 
+        color: red;
+
+    }
+/*  -------------------------------- TESTIMONIAL section ---------------------------------------------*/
+.files7 { 
+    height: 350px;
+    background-image: url(../image/a08dfebe-2d49-4514-9bab-c8b7c72a4e9a.jfif);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.files7 .overlay7 { 
+    background-color: rgba(0, 0, 0, 0.781);
+   
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.section7 {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.container7{
+    width: 100%;
+    height: 100%;
+}
+.container7 .photo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    
+
+}
+.photo {
+    float: left;
+    width: 50%;
+    margin-top: 70px;
+}
+.container7 .photo h2 { 
+    color: rgba(255, 255, 255, 0.767);
+    margin-top: 7px;
+    font-family: monospace;
+}
+.container7 .photo h3 {
+    color: rgba(80, 233, 238, 0.767);
+}
+.container7 .photo p { 
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+    font-size: 17px;
+    color: white;
+}
+/*  -------------------------------- team section ---------------------------------------------*/
+
+.logo img{
+border-radius: 50%;
+background-color: red;
+color: RED;
+}
